@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Linfei (Sophie) Shan | Economics &amp; Marketing Analytics</title>
+<meta name="description" content="Linfei (Sophie) Shan: Economics student at UC Santa Barbara focused on consumer and marketing analytics. Projects in SQL, Python, R and Power BI.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#16212e; --muted:#5b6775; --line:#e3e7ec; --bg:#fbfaf7; --card:#ffffff;
+    --accent:#1f4e79; --accent-soft:#e8eff6; --warm:#b5523b;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;font-size:16px}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .wrap{max-width:960px;margin:0 auto;padding:0 24px}
+
+  /* nav */
+  nav{position:sticky;top:0;z-index:10;background:rgba(251,250,247,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;height:58px}
+  nav .brand{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:18px;color:var(--ink)}
+  nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0;font-size:14px}
+  nav ul a{color:var(--muted)}
+  nav ul a:hover{color:var(--ink);text-decoration:none}
+
+  /* hero */
+  header.hero{padding:80px 0 56px}
+  .eyebrow{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--warm);font-weight:600;margin:0 0 14px}
+  h1{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:clamp(38px,6vw,58px);line-height:1.05;margin:0 0 18px;letter-spacing:-.01em}
+  .lede{font-size:19px;color:var(--muted);max-width:640px;margin:0 0 28px}
+  .actions{display:flex;flex-wrap:wrap;gap:12px}
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:11px 18px;border-radius:8px;font-weight:500;font-size:15px;border:1px solid var(--line);background:var(--card);color:var(--ink)}
+  .btn:hover{text-decoration:none;border-color:var(--accent)}
+  .btn.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+  .btn.primary:hover{background:#163a5c}
+  .facts{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:10px;overflow:hidden;margin-top:48px}
+  .facts div{background:var(--card);padding:16px 18px}
+  .facts b{display:block;font-family:Fraunces,Georgia,serif;font-size:24px;font-weight:600}
+  .facts span{font-size:13px;color:var(--muted)}
+
+  /* sections */
+  section{padding:56px 0;border-top:1px solid var(--line)}
+  h2{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:30px;margin:0 0 28px}
+  h3{font-size:18px;margin:0 0 4px}
+  .meta{color:var(--muted);font-size:14px}
+  .row{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+  .item{margin-bottom:26px}
+  .item p{margin:6px 0 0}
+  ul.tight{margin:8px 0 0;padding-left:20px}
+  ul.tight li{margin-bottom:4px}
+
+  /* projects */
+  .project{display:grid;grid-template-columns:1.05fr 1fr;gap:28px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px;margin-bottom:24px}
+  .project img{width:100%;border-radius:8px;border:1px solid var(--line)}
+  .tags{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 12px}
+  .tag{font-size:12px;font-weight:500;background:var(--accent-soft);color:var(--accent);padding:3px 9px;border-radius:999px}
+  .kpis{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:14px 0}
+  .kpi{border-left:3px solid var(--warm);padding:2px 0 2px 10px}
+  .kpi b{display:block;font-size:20px;font-family:Fraunces,Georgia,serif}
+  .kpi span{font-size:13px;color:var(--muted)}
+  .links{display:flex;gap:16px;font-size:14px;font-weight:500;margin-top:12px}
+
+  /* skills */
+  .skills{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .skill{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px}
+  .skill h3{font-size:15px;margin-bottom:8px}
+  .skill p{margin:0;color:var(--muted);font-size:15px}
+
+  /* contact */
+  .contact{display:flex;flex-wrap:wrap;gap:12px}
+  footer{padding:30px 0 44px;color:var(--muted);font-size:13px;border-top:1px solid var(--line)}
+
+  @media (max-width:760px){
+    nav ul{display:none}
+    .facts{grid-template-columns:1fr 1fr}
+    .project{grid-template-columns:1fr}
+    .skills{grid-template-columns:1fr}
+    header.hero{padding:56px 0 40px}
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#top">Linfei Shan</a>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <p class="eyebrow">Economics · Consumer &amp; Marketing Analytics</p>
+    <h1>Linfei (Sophie) Shan</h1>
+    <p class="lede">Economics student at UC Santa Barbara. I use SQL, Python, R and Stata to find out how pricing, marketing and the customer experience drive demand, and to turn those findings into business recommendations.</p>
+    <div class="actions">
+      <a class="btn primary" href="assets/Linfei_Shan_Resume.pdf" target="_blank" rel="noopener">Download résumé (PDF)</a>
+      <a class="btn" href="#projects">View projects</a>
+      <a class="btn" href="https://www.linkedin.com/in/linfei-shan-057957450/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="https://github.com/LinfeiShan" target="_blank" rel="noopener">GitHub</a>
+    </div>
+    <div class="facts">
+      <div><b>B.A. Economics</b><span>UC Santa Barbara · Sep 2027</span></div>
+      <div><b>3.34</b><span>GPA / 4.00</span></div>
+      <div><b>2</b><span>Data projects with code &amp; reports</span></div>
+      <div><b>1</b><span>Sole-authored publication</span></div>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="wrap">
+    <h2>About</h2>
+    <p>I'm completing a B.A. in Economics at UC Santa Barbara. I transferred from Santa Monica College and Peralta Colleges, where I studied at Zhejiang University in Hangzhou. My interests sit where economics meets marketing: how consumers respond to prices and promotions, why customers come back or leave, and how brands position themselves online.</p>
+    <p>I have studied digital marketing through case work on Chinese consumer brands, published a sole-authored analysis of Florasis' marketing strategy, and lead marketing for a student debate group of 83 members. More recently I have applied econometrics to real business data. I'm looking for analyst roles in marketing, consumer insights and e-commerce, and for graduate study in business analytics, marketing analytics and applied economics.</p>
+    <p class="meta">Languages: Mandarin (native) · English (fluent)</p>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <h2>Projects</h2>
+
+    <article class="project">
+      <div>
+        <h3>Who Buys, Who Comes Back, and What Drives Bad Reviews</h3>
+        <div class="meta">Customer analytics for the Olist e-commerce marketplace · 2026</div>
+        <div class="tags"><span class="tag">SQL</span><span class="tag">Python</span><span class="tag">Power BI</span><span class="tag">RFM</span><span class="tag">Cohort analysis</span><span class="tag">Regression</span></div>
+        <p>I built a SQL star schema from six raw tables (96K delivered orders, 93K customers), segmented customers with RFM scoring, tracked cohort retention, and estimated how late deliveries affect review scores using category, state and month fixed effects.</p>
+        <div class="kpis">
+          <div class="kpi"><b>97.8%</b><span>of customers buy only once</span></div>
+          <div class="kpi"><b>4.2%</b><span>of revenue from repeat buyers</span></div>
+          <div class="kpi"><b>−1.2 stars</b><span>effect of a late delivery</span></div>
+          <div class="kpi"><b>+33 pp</b><span>chance of a 1–2 star review</span></div>
+        </div>
+        <div class="links">
+          <a href="assets/report-olist-customer-analytics.pdf" target="_blank" rel="noopener">Read report (PDF)</a>
+          <a href="https://github.com/LinfeiShan/olist-customer-analytics" target="_blank" rel="noopener">Code on GitHub</a>
+        </div>
+      </div>
+      <div><img src="assets/olist.jpg" alt="Bar chart: average review score falls from 4.3 for early deliveries to below 2 for orders more than a week late" loading="lazy"></div>
+    </article>
+
+    <article class="project">
+      <div>
+        <h3>How Price-Sensitive Are Orange Juice Shoppers?</h3>
+        <div class="meta">Price elasticity of demand with supermarket scanner data · 2026</div>
+        <div class="tags"><span class="tag">R</span><span class="tag">Econometrics</span><span class="tag">Fixed effects</span><span class="tag">Instrumental variables</span><span class="tag">Pricing</span></div>
+        <p>Using 106K store-week records from Dominick's Finer Foods (83 stores, 11 brands), I estimated own- and cross-price elasticities with log-log regressions, store and week fixed effects, and a Hausman instrument. I then translated the estimates into Lerner-rule markups and a store-zone pricing recommendation.</p>
+        <div class="kpis">
+          <div class="kpi"><b>−3.2 / −3.6</b><span>elasticity, OLS / IV</span></div>
+          <div class="kpi"><b>26%–53%</b><span>implied markups by brand</span></div>
+          <div class="kpi"><b>0.94 vs 0.35</b><span>asymmetric brand competition</span></div>
+          <div class="kpi"><b>+0.44</b><span>less sensitive per 1 SD income</span></div>
+        </div>
+        <div class="links">
+          <a href="assets/report-oj-price-elasticity.pdf" target="_blank" rel="noopener">Read report (PDF)</a>
+          <a href="https://github.com/LinfeiShan/oj-price-elasticity" target="_blank" rel="noopener">Code on GitHub</a>
+        </div>
+      </div>
+      <div><img src="assets/oj.jpg" alt="Heat map of cross-price elasticities among Tropicana, Minute Maid and Dominick's orange juice" loading="lazy"></div>
+    </article>
+
+    <div class="item">
+      <div class="row"><h3>iHUB Programme: Digital Marketing</h3><span class="meta">Shenzhen · Jul–Aug 2024 · Overall grade: A</span></div>
+      <ul class="tight">
+        <li>Co-wrote a four-person team report on Dewu (POIZON)'s digital marketing strategy using brand case analysis. We examined how its authenticity positioning, SEO and social media reach users.</li>
+        <li>Led and presented the Digital Branding Elements analysis at the final presentation. The report recommended adding short-video content to Dewu's promotion mix.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="publication">
+  <div class="wrap">
+    <h2>Publication</h2>
+    <div class="item">
+      <p>Shan, L. (2024). Analysis of Florasis' Marketing Strategies from a Digital Marketing. <i>Advances in Economics, Management and Political Sciences</i>, 136, 59–67. <a href="https://doi.org/10.54254/2754-1169/2024.18681" target="_blank" rel="noopener">DOI: 10.54254/2754-1169/2024.18681</a></p>
+      <p class="meta">Examined how Florasis used social media, influencer partnerships, brand storytelling and e-commerce to position its beauty brand.</p>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="wrap">
+    <h2>Education</h2>
+    <div class="item">
+      <div class="row"><h3>University of California, Santa Barbara</h3><span class="meta">Expected September 2027</span></div>
+      <div>B.A. in Economics · GPA 3.34/4.00</div>
+      <p class="meta">Relevant coursework (in progress): Intermediate Microeconomic Theory, Intermediate Macroeconomic Theory</p>
+    </div>
+    <div class="item">
+      <div class="row"><h3>Santa Monica College &amp; Peralta Colleges</h3><span class="meta">2023–2025</span></div>
+      <div>Transfer coursework, delivered at Zhejiang University, Hangzhou</div>
+      <p class="meta">Including Elementary Statistics</p>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <h2>Leadership</h2>
+    <div class="item">
+      <div class="row"><h3>Vice President of Marketing, Student-led debate group</h3><span class="meta">Santa Barbara, CA · Sep 2025–Present</span></div>
+      <ul class="tight">
+        <li>Run the group's promotion on WeChat, Douyin and Xiaohongshu, producing posts, short videos and posters for debates and events.</li>
+        <li>Lead member recruitment through social media and in-person networking. The group has grown to 83 members.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill"><h3>Analytics &amp; visualization</h3><p>Excel (PivotTables, lookups), Power BI</p></div>
+      <div class="skill"><h3>Programming &amp; statistics</h3><p>SQL, Python, R, Stata</p></div>
+      <div class="skill"><h3>Methods</h3><p>Regression with fixed effects, instrumental variables, RFM segmentation, cohort analysis, brand case analysis</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <h2>Contact</h2>
+    <p>I'm open to analyst roles and to conversations about graduate programs. The quickest way to reach me is by email.</p>
+    <div class="contact">
+      <a class="btn primary" href="mailto:shanlf0615@gmail.com">shanlf0615@gmail.com</a>
+      <a class="btn" href="https://www.linkedin.com/in/linfei-shan-057957450/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="https://github.com/LinfeiShan" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn" href="assets/Linfei_Shan_Resume.pdf" target="_blank" rel="noopener">Résumé (PDF)</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">© 2026 Linfei (Sophie) Shan · Santa Barbara, CA</div>
+</footer>
+
+</body>
+</html>
